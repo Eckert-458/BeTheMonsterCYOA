@@ -1,0 +1,2007 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Be The Monster CYOA</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Be The Monster CYOA
+      </h1>
+    </header>
+
+    <main>
+      <div class="section-description flavor">
+        <div class="boxes">
+        <img style="margin-left: 16px;float: right;" src="https://cdn.glitch.com/2cad2ce9-8277-4840-a835-e0ac4744d547%2FAll-Mother.png?v=1569723258412" alt="All-Mother" height="400"/>  
+        </div>
+        
+          <p >
+            How did you end up here...? Souls do not ... come here. They can't.
+          </p>
+          <p>
+            Human, you have to go to the lake...to Kur ... Else ... You don't know? 
+            Bad, that's ... bad. Too long here and you'll be a prisoner. Like me...
+          </p>
+          <p>
+            Quick! Run to the mountaintop. You don't deserve to be trapped here. No one ... does.
+          </p>
+          <p>
+            No... It's too late now. Why would the trap you here? Just to ... hurt me ... ? 
+            I'm so sorry ... this is my fault.
+          </p>
+          <p>
+            But ... there's a choice. I could ... make you a new body. 
+            With it, you'll be able to go above the not-sky, into their world.
+            But ... humans ... I can't make them. It's forbidden.
+          </p>
+          <p>
+            Now ... come to me. I'm a mother again. So ... happy.
+          </p>
+      </div> 
+      
+      <section id="Path">
+        <h2>Choose one path:</h2>
+        <div class="options top-images row4">
+
+          <!-- Row#1, Box #1 -->
+          <div class="option" id="path:primal-monster">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Primal Monster" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Primal Monster</h4>
+            <div class="option-description">
+              <div class="flavor">"Ah... Like my first children: powerful, wild and pure. They still fight for me ... above. I still hear their cries ... when they die."</div><br/>
+              
+              As a pure child of the all-mother, you are a beloved family to all monsters and have nothing to fear from them. <br/><br/>
+              
+              Your only enemies are the gods and their followers.<br/><br/>
+              
+              <div class="bonus">
+                Start with <b>100</b> points
+              </div>
+            </div>
+          </div>
+          
+          <div class="option" id="path:brood-monster">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Brood Monster" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Demi-Monster</h4>
+            <div class="option-description">
+              <div class="flavor">"You want to be like my daugters? Promise me that... if you have children ... you will raise them better than me."</div><br/>
+              
+              Once scions of the different broods possessed a fraction of her fertility, but after the oaths of surrender were extracted, it can no longer be so. <br/><br/>
+              These creatures have kept a distance from humanity since the wars conclusion. 
+              None of the original brood matriachs and patriachs remain. <br/><br/>
+              
+              The lingering existance of the broods, is a source of nervousness for humans.<br/>
+              
+              <div class="bonus">
+                Start with <b>90</b> points
+              </div>
+            </div>
+          </div>
+          
+          <div class="option" id="path:demi-monster">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Demi-Monster" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Demi-Monster</h4>
+            <div class="option-description">
+              <div class="flavor">"I... understand. You want to be as you... were. I cannot give you that, but I hope... this makes you happy."</div><br/>
+              
+              Those of an existance between monster and human. <br/><br/>
+              While these creatures remained neutral the generation that lived during the war are long dead. <br/><br/>
+              
+              Never to be loved by both man and monster, only tolerated.<br/>
+              
+              <div class="bonus">
+                Start with <b>80</b> points
+              </div>
+            </div>
+          </div>
+          
+          <div class="option" id="path:human">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Human" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Human</h4>
+            <div class="option-description">
+              <div class="flavor">"You ... don't? You ... understand that you will be stuck here?"</div><br/>
+              
+              While once children of the All-Mother, humans were stolen from her by the gods. 
+              Due to her oaths she can no longer directly make changes to your body, but perhaps with her guidance there are alternate methods you may take.
+              
+              <div class="bonus">
+                Start with <b>40</b> points
+              </div>
+              <div class="malus">
+                May ONLY select from the PERKS and SHASTRA ASTRA sections<br />
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="section-description">
+          <div class="flavor">"Your soul is ... so strong. Were you ... truely human? 
+            No, it matters not. Here, choose how your body will be. 
+            I ... no longer ... can say that I know what is best for my children. "</div><br/>
+          <p>
+            A monster's strength is determined by POWER, MAGIC, and SPEED. Theses stats go from 1 to 11.
+          </p>
+          <p>
+            <b>POWER:</b> Physical Strength, resilience, and toughness <br/>
+            <b>MAGIC:</b> Magical prowess, and resistance to magical effects <br/>
+            <b>SPEED:</b> Cunning, reflexes and quickness of thought <br/>
+          </p>
+          <p>
+            You begin with 1 in each stat, and must end with a value between 1 and 11 (inclusive) in each stat.
+          </p>
+          <p>
+            Power:<br/>
+            1 - Almost the complete lack of the stat <br/>
+            3 - An average human <br/>
+            5 - A master in the stat <br/>
+            7 - The realm of heros <br/>
+            9 - The realm demi-gods and gods <br/>
+            11 - Surpassing the gods themselves <br/>
+          </p>
+          
+        </div>
+      </section>
+      
+      <section id="Size">
+        <h2>Size</h2>
+        <div class="section-description">
+          <p>
+            What was is your body's new size (pick one):
+          </p>
+        </div>
+        <div class="options top-images row6">
+
+          <!-- Row#1, Box #1 -->
+          <div class="option" id="size:tiny">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Tiny Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Tiny</h4>
+            <div class="option-description">
+              <div class="flavor">"Like the masters of the marshes and ... of the forests. <br /><br /> They were there ... before I was."</div><br/>
+              <p>
+                Your body is tiny, between the size of an ant and an apple. <br /><br />
+                Your size grants you great agility.<br /><br />
+                Few can survice with so weak a grame, but in restraining your soul in this tiny form, your power is released with a strength that makes experienced mages pale in comparison.
+              </p>
+              <div class="bonus" id="size:tiny:bonus">
+                <b>Gain:</b><br />
+                +3 to MAGIC <br />
+                +3 to SPEED <br />
+              </div>
+            </div>
+          </div>
+          
+          <div class="option" id="size:small">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Small</h4>
+            <div class="option-description">
+              <div class="flavor">"My children, some ... fled from humans. I granted them bodies that could... walk unseen tunnels."</div><br/>
+              <p>
+                Your size is that of a common housepet, from a small cat to the average dog. <br /><br />
+                Beasts your size are weak, and often need to travel in groups.
+                But small claws cut all the same, and with your agility, a careless enemy will still meet their end.
+              </p>
+              <div class="bonus" id="size:small:bonus">
+                <b>Gain:</b><br />
+                +1 to POWER <br />
+                +2 to MAGIC <br />
+                +3 to SPEED <br />
+              </div>
+            </div>
+          </div>
+          
+          <div class="option" id="size:medium">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Medium Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Medium</h4>
+            <div class="option-description">
+              <div class="flavor">"Once, humans were my children too. I ... miss those days."</div><br/>
+              <p>
+                You weight is that of a human, and if you stand on two legs, are of a similar size. <br /><br />
+                Most monsters are this size, for in the distant past they lived side-by-side with humans.<br /><br />
+                This size offers no magor strengths, but also grants no weaknesses.
+              </p>
+              <div class="bonus" id="size:medium:bonus">
+                <b>Gain:</b><br />
+                +2 to POWER <br />
+                +2 to MAGIC <br />
+                +2 to SPEED <br />
+              </div>
+            </div>
+          </div>
+          
+          <div class="option" id="size:huge">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Huge Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Huge</h4>
+            <div class="option-description">
+              <div class="flavor">"Some wanted to protect... their families. These bodies were... for them."</div><br/>
+              <p>
+                You are far larger than a human, ranging in size from a bull to an elephant. <br /><br />
+                These days, monsters of this size, are commonly seen battering the walls of temple-cities, braying for the gods to offer their heads in apology.<br /><br />
+                Great in strength, but MAGIC and SPEED do not come easily to them.
+              </p>
+              <div class="bonus" id="size:huge:bonus">
+                <b>Gain:</b><br />
+                +4 to POWER <br />
+                +1 to MAGIC <br />
+                +1 to SPEED <br />
+              </div>
+            </div>
+          </div>
+          
+          <div class="option" id="size:gargantuan">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Gargantuan Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Gargantuan</h4>
+            <div class="option-description">
+              <div class="flavor">"Big, and strong... like my eldest children. I hope they can still be happy."</div><br/>
+              <p>
+                Your size is enourmous, almost the size of a skyscraper. <br />
+                The titans that managed to survive the war are feared by mankind. Being that tower over the tallest building and can easily send them toppling down.<br /><br />
+                For now, they slumber at the final behest of their mother, simmering in their hatred and biding their time. When they awake, mankind weeps tears of blood.
+              </p>
+              <div class="bonus" id="size:gargantuan:bonus">
+                <b>Gain:</b><br />
+                +5 to POWER <br />
+                +3 to MAGIC <br />
+                +1 to SPEED <br />
+              </div>
+            </div>
+          </div>
+          
+          <div class="option" id="size:colossal">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Colossal Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Colossal</h4>
+            <div class="option-description">
+              <div class="flavor">"Like he was..."</div><br/>
+              <p>
+                Your size defies imagination, your body overtakes the horizon. <br />
+                Wings that rearrange the winds, coils that crush mountains, claws that rend the sky.<br /><br />
+                Only one monster like this has existed before: the first, most beloved child of the All-Mother.<br /><br />
+                His head was presented to his mother by the gods, and her anguished screams marked the begining of the Great War.
+              </p>
+              <div class="bonus" id="size:colossal:bonus">
+                <b>Gain:</b><br />
+                +7 to POWER <br />
+                +6 to MAGIC <br />
+                +2 to SPEED <br />
+                +<b>[Trumpeter]</b> for free<br />
+              </div>
+              <div class="malus">
+                - Must take <b>[Notorious]</b> drawback without reward.
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <section id="Monstrous Heritage">
+        <h2>Monstrous Heritage</h2>
+        <div class="section-description">
+          <p>
+            Choose the heritage of your new body (pick one):
+          </p>
+        </div>
+        <div class="options top-images row6">
+
+          <!-- Row#1, Box #1 -->
+          <div class="option" id="heritage:animal">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Animal Heritage" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Animal</h4>
+            <div class="option-description">
+              <div class="flavor">"There are many like you. Nothing ... wrong with that"</div><br/>
+                <p>
+                  Most monsters seem to have animal qualities, or is it animals whcih resemble their greater brethren?<br /><br />
+                  No matter which animal aspects you choose to take, your superior body grants you great strength and agility<br /><br />
+                </p>
+                <div class="bonus" >
+                  <b>Gain:</b><br />
+                  +1 to POWER <br />
+                  +1 to SPEED <br />
+                </div>
+            </div>
+          </div>
+          
+          <div class="option" id="heritage:plant">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Plant</h4>
+            <div class="option-description">
+              <div class="flavor">"To feed without killing. That is good."</div><br/>
+                <p>
+                  In the deep forests there are rumors of man-eating trees, in the steppes is said to be patches of tall grass which swallow horses whole.<br /><br />
+                  It's all true, of course. Some monsters take the form of plants or fungi, needing only the soil or the sun to live.<br /><br />
+                  Like plants, you can take punishment most animals can only dream of surviving.<br /><br />
+                </p>
+                <div class="bonus" >
+                  <b>Gain:</b><br />
+                  +1 to POWER <br />
+                  +<b>[Mimicry]</b> for free<br />
+                </div>
+            </div>
+          </div>
+          
+          <div class="option" id="heritage:elemental">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Elemental</h4>
+            <div class="option-description">
+              <div class="flavor">"You hear the song ... too? The murmuring voice of the worldbones?"</div><br/>
+                <p>
+                  Soon after the firstborn, the All-Mother gave birth to four more children. 
+                  They were unlike all that came before and all that came after: devoid of will, form, and thought.
+                  But in being born, they shackled the old chaos, giving birth to the world.<br /><br />
+                  You hear one of their voices and your body is composed, at least in part, of one of the principles that was imposed on chaos: fire, water, earth, or wind.<br /><br />
+                </p>
+                <div class="bonus" >
+                  <b>Gain:</b><br />
+                  +1 to MAGIC <br />
+                  +<b>[Elemental Control]</b> of the matching type for free<br />
+                </div>
+            </div>
+          </div>
+          
+          <div class="option" id="heritage:crysal">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Crystalline</h4>
+            <div class="option-description">
+              <div class="flavor">"Full of crystals,... like my cradle."</div><br/>
+                <p>
+                  The tumultuous chaos before the All-Mother gave rise to order. This order took the shape of great, clear crystals that held chaos at bay.<br /><br />
+                  Today, these crystals no longer form naturally, but some monsters can let these manifestations of order grow in their body.<br /><br />
+                  The crystals let you manipulate the principles of the world in a way few dare dream of, but are tremendously heavy.                  
+                </p>
+                <div class="bonus" >
+                  <b>Gain:</b><br />
+                  +1 to MAGIC <br />
+                  +<b>[Spelltongue]</b> for free<br />
+                </div>
+            </div>
+          </div>
+          
+          <div class="option" id="heritage:god">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>God-blooded</h4>
+            <div class="option-description">
+              <div class="flavor">"You... want to be like them? I understand. They are strong."</div><br/>
+                <p>
+                  The first of the gods was born a tiny, frail thing, but he posessed a skin that would turn away the blows of his lessers and a blinding radiance.<br /><br />
+                  You will be born like he was, skin of ivory and nails of gold. Will you use your divinity to mock the gods or join them?<br /><br />
+                </p>
+                <div class="bonus" >
+                  <b>Gain:</b><br />
+                  + Immune to Physical attacks with less POWER than you <br />
+                  + Immune to Magical attacks with less MAGIC than you <br />
+                  +<b>[Aura]</b> for free<br />
+                </div>
+            </div>
+          </div>
+          
+          <div class="option" id="heritage:chaotic">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Chaotic</h4>
+            <div class="option-description">
+              <div class="flavor">"Then, you are from beyond?"</div><br/>
+                <p>
+                  They say that the old chaos lives no longer, but the question remains: what then lies beyond existence?<br /><br />
+                  Take into yourself the glory of mutation, the joy of transience, and the hatred of what never will be.<br /><br />
+                  Your body does not fully obey the laws of this world, and is thus incredibly resilient<br /><br />
+                </p>
+                <div class="bonus" >
+                  <b>Gain:</b><br />
+                  +1 to POWER <br />
+                  +<b>[Pneumaphagy]</b> for free<br />
+                </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <section id="Body Shape">
+        <h2>Body Shape</h2>
+        <div class="section-description">
+          <p>
+            Choose the shape of your new body (pick one):
+          </p>
+        </div>
+        <div class="options  top-images row6">
+
+          <!-- Row#1, Box #1 -->
+          <div class="option" id="shape:biped">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Biped</h4>
+            <div class="option-description">
+              <div class="flavor">"Hands for tools? No, today... for weapons."</div><br/>
+              <p>
+                Two legs, two armgs and a single head.
+                Arms serve to increase your natural dexterity, while strong legs increase your power.<br /><br />
+                Monsters of this type include the savage snake-men of the southern jungles, the eccentric stolas and emasculated minatuar that tend to the garden of the gods.<br /><br />
+              </p>
+              <div class="bonus" >
+                <b>Gain:</b><br />
+                +1 to POWER <br />
+                +1 to SPEED <br />
+                +1 free [arm] <br />
+              </div>
+              <div class="bonus" >
+                <b>Body Slots:</b><br />
+                +1x [Mien slot] <br />
+                +1x [Horn slot] <br />
+                +1x [Maw slot]  <br />
+                +1x [Arm slot]  <br />
+                +1x [Leg slot]  <br />
+                +1x [Tail slot] <br />
+              </div>
+            </div>
+          </div>
+          
+          <div class="option" id="shape:quadruped">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Quadruped</h4>
+            <div class="option-description">
+              <div class="flavor">"My children...loved to run in the sands."</div><br/>
+              <p>
+                Four legs and a head, sometimes a tail.
+                Are you a strong and stocky beast, or a nimble and graceful one?<br /><br />
+                The maneating mares of the northern plains and the wind-riding bagers of the far-east are examples of this type of monster.<br /><br />
+              </p>
+              <div class="bonus" >
+                <b>Gain:</b><br />
+                +2 to POWER OR +2 to SPEED <br />
+              </div>
+              <div class="bonus" >
+                <b>Body Slots:</b><br />
+                +1x [Mien slot] <br />
+                +1x [Horn slot] <br />
+                +1x [Maw slot]  <br />
+                +2x [Leg slot]  <br />
+                +1x [Tail slot] <br />
+              </div>
+            </div>
+          </div>
+          
+          <div class="option" id="shape:serpentine">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Serpentine</h4>
+            <div class="option-description">
+              <div class="flavor">"Some danced for ... me. Their bodies were ... like this."</div><br/>
+              <p>
+                Most of your body is a single great tail. This confers you great grace, enough to mesmerize the common onlooker.<br /><br />
+                From the flying sharks of the southern skies, to the voracious moray eels that infest the rivers, monsters of this type thrive on many, many places.<br /><br />
+              </p>
+              <div class="bonus" >
+                <b>Gain:</b><br />
+                +1 to SPEED <br />
+                +<b>[Toxicity]</b> for free<br />
+              </div>
+              <div class="bonus" >
+                <b>Body Slots:</b><br />
+                +1x [Mien slot] <br />
+                +1x [Horn slot] <br />
+                +1x [Maw slot]  <br />
+                +2x [Tail slot] <br />
+              </div>
+            </div>
+          </div>
+          
+          <div class="option" id="shape:arthropod">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Arthropod</h4>
+            <div class="option-description">
+              <div class="flavor">"Strong ... shell. Good, this way they cannot hurt you."</div><br/>
+              <p>
+                With their many skittering limbs and gnawing maws, these monsters are amongst the most feared by mankind, perhaps out of fear of what can thrive in places they cannot see.<br /><br />
+                Their hard shells and powerful muscles gran them increadible strength and movement, but also make it harder to channel magical power.<br /><br />
+                <br /><br />
+              </p>
+              <div class="bonus" >
+                <b>Gain:</b><br />
+                +2 to POWER <br />
+                +2 to SPEED <br />
+              </div>
+              <div class="malus">
+                -2 to MAGIC <br/>
+              </div>
+              <div class="bonus" >
+                <b>Body Slots:</b><br />
+                +1x [Mien slot] <br />
+                +1x [Maw slot]  <br />
+                +4x [Leg slot]  <br />
+                +2x [Tail slot] <br />
+              </div>
+            </div>
+          </div>
+          
+          <div class="option" id="shape:flier">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Flier</h4>
+            <div class="option-description">
+              <div class="flavor">"To fly ... free. I miss that."</div><br/>
+              <p>
+                A body dominated by great wings. A body made to soar high above.<br /><br />
+                Flying monsteres are held in reverence by humans, fore beings that live above the clouds must be close to the gods.<br /><br />
+                Great wings, and a light body grant you great speed, but hollow bones make you somewhat frail.<br /><br />
+              </p>
+              <div class="bonus" >
+                <b>Gain:</b><br />
+                +3 to SPEED <br />
+              </div>
+              <div class="malus">
+                -1 to POWER <br/>
+              </div>
+              <div class="bonus" >
+                <b>Body Slots:</b><br />
+                +1x [Mien slot] <br />
+                +1x [Horn slot] <br />
+                +1x [Maw slot]  <br />
+                +1x [Wing slot] <br />
+                +1x [Leg slot]  <br />
+                +1x [Tail slot] <br />
+              </div>
+            </div>
+          </div>
+          
+          <div class="option" id="shape:other">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Other</h4>
+            <div class="option-description">
+              <div class="flavor">"How... strange. Is this what you ... want?"</div><br/>
+              <p>
+                From the All-Mother, all creatures were born.
+                And that includes all sorts of strange beings.<br /><br />
+                Perhaps you want to be a snail or a slug? A cephalopod or a echinoderm? Maybe a being stranger still?<br /><br />
+                Your soul shines through your choice and grants you the same prowess, no matter your shape.<br /><br />
+              </p>
+              <div class="bonus" >
+                <b>Gain:</b><br />
+                +1 to POWER OR MAGIC OR SPEED<br />
+                +1 <b>[Perk]</b> for free<br />
+              </div>
+              <div class="bonus" >
+                <b>Body Slots:</b><br />
+                +5x [Any slot] of any subtype(s) <br />
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <section id="Body Parts">
+        <h2>Body Parts:</h2>
+        <div class="section-description">
+          Based on the body type you select, you will gain a number of horn, mien, maw, arm, wing, leg, and tail slots. 
+          These slots may be used to gain increases to ability score or useful abilities. 
+          Slots that remain empty will either not offer extra functionality or not manifest on your final physical form at all. 
+          Multiple slots of the same type may manifest as either additional body parts or as additional abilities for existing body parts. 
+          If you want additional slots or if your chosen form doesn’t normally include a particular body part, you may purchase an additional slot.
+          <br /><br />
+          Note: Brood Monsters and Demi-Monsters can exchange their forms maw slots for arm slots  
+        </div>
+        <h3>Mien</h3>
+        <div class="options top-images row6">
+          <div class="option" id="mien:extra">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Extra Mien</h4>
+            <div class="option-description">
+            </div>
+          </div>
+          <div class="option" id="mien:mesmerizing">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Mesmerizing Mien</h4>
+            <div class="option-description">
+              The gods might declare all monsters anathema, but their beauty, power and wisdom will always be a siren call upon mankind.<br /><br />
+              Perhaps you wish to embody that temptation?<br /><br />
+            </div>
+          </div>
+          <div class="option" id="mien:terrifying">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Terrifying Mien</h4>
+            <div class="option-description">
+              Brave men grit their teeth and consider running when they face you on the battlefield, and the craven have long fled.<br /><br />
+              Your whole body radiates primal terror, and even out of combat everything will be wary of you.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="mien:wise">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Wise Mien</h4>
+            <div class="option-description">
+              In the fringes of civilization, fables of meetings with whimsical beasts abound. Their wisdom has saved many heroes, and their cruelty has been the end of many fools.<br /><br />
+              You are now one of them, and you possess their frightful intelligence and arcane wisdom.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="mien:peaceful">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Peaceful Mien</h4>
+            <div class="option-description">
+              
+            </div>
+          </div>
+        </div>
+        
+        <h3>Horn</h3>
+        <div class="options top-images row6">
+          <div class="option" id="horn:extra">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Extra Horn</h4>
+            <div class="option-description">
+              For reason’s unknown, horned monsters seem to stand above their brethren, and those with multiple horns even more so.<br /><br />
+              Extra horns now adorn your head.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="horn:goring">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Goring Horns</h4>
+            <div class="option-description">
+              Sharp, large and very threatening horns raise from your scalp.<br /><br />
+              Sharper than any sword and far more resilient than any metal, anyone meeting their business end is going to have a tough time walking it off.<br /><br />
+
+            </div>
+          </div>
+          <div class="option" id="horn:ornamental">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Ornamental Horns</h4>
+            <div class="option-description">
+              A pair of very impressive horns rests above your head.<br /><br />
+              Not only do they serve to mark you as an excellent specimen of your kind, they also absorb magic from the environment, boosting your reservoir considerably.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="horn:sensor">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Sensor Horns</h4>
+            <div class="option-description">
+              Odd lights dance across your horns, revealing their nature as something more.<br /><br />
+              Capable of echolocation, heat sense, magic perception and photosensitivity, your horns give you the upper hand in all matters related to perception.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="horn:purifying">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Purifying Horns</h4>
+            <div class="option-description">
+              Your horns purify anything they touch: healing disease, cleansing impurity and rendering poison inert.<br /><br />
+              Your horns are now a prize that could fetch a king’s ransom.<br /><br />
+            </div>
+          </div>
+        </div>
+          
+        <h3>Maw</h3>
+        <div class="options  top-images row6">
+          <div class="option"  id="maw:extra">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Extra Maw</h4>
+            <div class="option-description">
+              Perhaps another mouth now exists somewhere in your body. 
+              Perhaps your current mouth is a chimerical thing that mixes and matches different properties.<br /><br />
+              Humans say monsters are gluttonous beings, will you prove them right?<br /><br />
+            </div>
+          </div>
+          <div class="option" id="maw:fanged">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Fanged Maw</h4>
+            <div class="option-description">
+              A mouth full of sharp teeth spells death to anyone foolish enough to receive your bite.<br /><br />
+              Your fangs are sharper than daggers and harder than steel.  
+              Even if you knocked them off, they would regrow in less than a day.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="maw:beaked">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Beaked Maw</h4>
+            <div class="option-description">
+              A beak that can shatter boulders, nature’s spear.<br /><br />
+              Perhaps it’s ragged to tear the flesh from your enemies. 
+              Perhaps there are teeth inside to hold your prey still. Either way, it is a fearsome weapon.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="maw:engulfing">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Engulfing Maw</h4>
+            <div class="option-description">
+              Even if your maw looks unassuming when closed, it now can stretch enough to devour beings even larger than yourself. 
+              You devour even magic when you take a bite.<br /><br />
+              Your gullet and stomach can take on the results of your gluttony, but ensuring that your prey is dead would be recommended. <br /><br />
+            </div>
+          </div>
+          <div class="option" id="maw:gaping">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Gaping Maw</h4>
+            <div class="option-description">
+              Your maw is locked into a cavernous yawn and cannot be closed. <br /><br />
+              Your tongue, however, is incredibly dexterous and can reach out and snatch prey with ease.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="maw:projectile">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Projectile Maw</h4>
+            <div class="option-description">
+              You can eject your maw and part of your throat out of your head in an attempt to snatch prey in a swift motion.<br /><br />
+              Returning them to their place takes only an instant.<br /><br />
+            </div>
+          </div>
+        </div>
+        
+        <h3>Arms</h3>
+        <div class="options  top-images row6">
+          <div class="option" id="arms:extra">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Extra Arms</h4>
+            <div class="option-description">
+              An additional pair of arms spring from your frame.<br /><br />
+              Or maybe your current ones are a marvelous thing, with the abilities of one or more options.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="arms:weapon">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Weapon Arms</h4>
+            <div class="option-description">
+              Your arms are now lethal weapons.<br /><br />
+              Sharp blades that make them swords, spear tips that can break through stone, hammerheads that break bones. 
+              These and more can be the form your arms take.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="arms:weaving">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Weaving Arms</h4>
+            <div class="option-description">
+              Your arms have a strange quality to them, looking almost out of place.<br /><br />
+              Attuned to the ebb and flow of magic, your arms allow you to weave greater spells with less power required.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="arms:grasping">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Grasping Arms</h4>
+            <div class="option-description">
+              Monsters might hate humans for their betrayal, but even they can’t deny tools are useful.<br /><br />
+              With these arms, turning the weapons of mankind against them is an easy task.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="arms:gliding">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Gliding Arms</h4>
+            <div class="option-description">
+              Your arms are adapted to some sort of flight, but lack the power to hoist you in the air by themselves.<br /><br />
+              However, strong enough monsters or those with power over the wind can fly with these without problem.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="arms:tentacle">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Tentacle Arms</h4>
+            <div class="option-description">
+              Your arms can stretch well beyond what looks possible, and can bend at any point, letting you deal blows from unexpected angles.<br /><br />
+              Beasts like this often dwell in the sea, and seeing them on the surface is rare.<br /><br />
+            </div>
+          </div>
+        </div>
+        
+        <h3>Wings</h3>
+        <div class="options  top-images row6">
+          <div class="option" id="wing:extra">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Extra Wings</h4>
+            <div class="option-description">
+              An extra pair of wings sprouts from your body, or your wings are now empowered.<br /><br />
+              What a joy it is to soar, to part through sky or sea, the landlocked as ants in the distance.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="wing:feathered">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Feathered Wings</h4>
+            <div class="option-description">
+              A shrill cry resounds from the sky, and the shepherd curses, for he has lost on of his herd.<br /><br />
+              Your wings can lift you out of the ground in a single beat, carrying your weight with ease.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="wing:weaving">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Weaving Wings</h4>
+            <div class="option-description">
+              The gnarled thing the priest keeps hidden answers one more question, and his faith in the gods withers a bit more.<br /><br />
+              Your strange wings let you levitate and fly without movement on their part, and the spells you weave increase in power.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="wing:insectoid">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Insectoid Wings</h4>
+            <div class="option-description">
+              Wings that beat so fast that they seem still announce the arrival of the lord of the marsh. 
+              The traveler doesn’t have time to scream before death claims him.<br /><br />
+              Your body has adapted to your wings, letting you dart around at great speeds<br /><br />
+            </div>
+          </div>
+          <div class="option" id="wing:membrane">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Membrane Wings</h4>
+            <div class="option-description">
+              Below a structure much like an arm, strands of bone are united by thin skin.<br /><br />
+              While weaker than feathered wings, these entrap wind much better, requiring less energy to fly.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="wing:diving">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Diving Wings</h4>
+            <div class="option-description">
+              Your wings and body are now adapted to swimming as well as flying.<br /><br />
+              Your body easily withstands the immense pressure, and is capable of exploring the bottom of the seas.<br /><br />
+            </div>
+          </div>
+        </div>
+        
+        <h3>Legs</h3>
+        <div class="options  top-images row6">
+          <div class="option" id="leg:extra">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Extra Legs</h4>
+            <div class="option-description">
+              Whether to skitter underground or gallop the land, more legs are always useful.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="leg:spear">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Spear Legs</h4>
+            <div class="option-description">
+              Sometimes, no dull thuds or loud buzzing announces the presence of a monster, but a sharp sound as the air splits with their steps.<br /><br />
+              Your legs, stronger than any metal, can break through armor and rend flesh with ease.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="leg:weaving">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Weaving Legs</h4>
+            <div class="option-description">
+              Each step you take somehow feels more wobbly, yet more solid than the last, for you no longer tread solely upon the physical.<br /><br />
+              Felling the flow of magic on your feet lets you spend less power on your spells.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="leg:talon">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Taloned Legs</h4>
+            <div class="option-description">
+              In the very distant north, the heathen barbarians fear the proud falcons above all else, for their talons spell death to all.<br /><br />
+              Without the tiniest effort, your claws split flesh, so sharp they are that the air whistles when it touches them.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="leg:hoof">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Hoofed Legs</h4>
+            <div class="option-description">
+              The earth rubles as the thundering footfalls of the titan sound across the plains, spelling the doom of the trespassers.<br /><br />
+              Muscled legs ending on a flat surface grant you great kinging power, and the possibility of trampling your enemies.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="leg:grasping">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Grasping Legs</h4>
+            <div class="option-description">
+              The great crab curiously holds the weapon of its would-be killer, before casually shattering it and casting it away.<br /><br />
+              Your legs can manipulate items somewhat dexterously, but not to the extent of human arms.<br /><br />
+            </div>
+          </div>
+        </div>
+        
+        <h3>Tail</h3>
+        <div class="options  top-images row6">
+          <div class="option" id="tail:extra">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Extra Tail</h4>
+            <div class="option-description">
+              The tail is the end of the body, but that does not mean it does not have its uses.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="tail:coiling">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Coiling Tail</h4>
+            <div class="option-description">
+              Your tails are incredibly long and are strong enough to support your weight or to be used as whips.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="tail:weaving">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Weaving Tail</h4>
+            <div class="option-description">
+              As your tail lazily hangs, you feel magic coiling around it, floating on its surface like oil on water.<br /><br />
+              Your strange tail allows you to manipulate magic all the better.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="tail:amphisbaena">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Amphisbaena Tail</h4>
+            <div class="option-description">
+              An additional head now rests at the end of your tail. It perceives the world with acuity, increasing your perception. <br /><br />
+              If it has its own will is for you to decide.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="tail:stinger">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Stinger Tail</h4>
+            <div class="option-description">
+              A sharp, venomous stinger now spouts from your tail.<br /><br />
+              The nature of its payload is up to you, but it is easily lethal to beings with less than 1 more power than you.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="tail:pincer">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Pincer Tail</h4>
+            <div class="option-description">
+              You tail has a strong pincer at its end, able to hold most things in a steely grasp.<br /><br />
+              Not very dexterous, but excels at throwing things.<br /><br />
+            </div>
+          </div>
+        </div>
+          
+      </section>
+      
+      <section id="Perks">
+        <h2>Perks:</h2>
+        
+        <h3>Extra Growth</h3>
+        <div class="options top-images row3">
+          <div class="option" id="perk:+power">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Extra Power</h4>
+            <div class="option-description">
+              <div class="flavor">"Don’t drop your guard, that critter is even stronger than it looks." <br /> – Mercenary captain. </div><br />
+              In the old chaos there was no difference between the physical and the ethereal, between thought and action, between will and power.<br /><br />
+              Today it is no longer so, but the soul can still bolster the body.<br /><br />
+              And your soul is a mighty one indeed.<br /><br /><br />
+              This can be taken multiple times.<br /><br />
+            </div>
+          </div>    
+          <div class="option" id="perk:+magic">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Extra Magic</h4>
+            <div class="option-description">
+              <div class="flavor">"Oh, my dear crystals, how I desire thee..." <br />– Mage found dead in a cave </div><br />
+              There has been much discussion about what magic really is at its very core.<br /><br />
+              Some say a spell is communication, that they call and something obeys.<br /><br />
+              Others, that it is simply the soul overcoming reality, citing the strange powers of some monsters.<br /><br />
+              Magic, a mystery for the ages, but one you excel in.<br /><br /><br />
+              This can be taken multiple times.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="perk:+speed">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Extra Speed</h4>
+            <div class="option-description">
+              <div class="flavor">"We thought we had fled it, but in an instant it was upon us." –Retired Solider</div><br />
+              An undeniable advantage that monsters have over humans is their speed.<br /><br />
+              What takes ten days of travel for a human army, a centaur warband crosses in six.<br /><br />
+              Boats cannot outpace the gullet of the giant serpents that give chase.<br /><br />
+              You are particularly swift of foot and eye.<br /><br /><br />
+              This can be taken multiple times.<br /><br />
+            </div>
+          </div>
+        </div>
+        
+        <h3>Magic</h3>
+        <div class="options top-images row4">
+          <div class="option" id="perk:fire">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Fire Control</h4>
+            <div class="option-description">
+              <div class="flavor">"Don’t touch them! They’re…Oh, by Ninlil’s tits! Now I need another apprentice." <br />–An irritated mage</div><br />
+              When fire was born, the endless possibilities of chaos were burnt away, leaving only what could be.<br /><br />
+              Fire prefers to manifest in great bursts of destruction, but can appear in weaker forms if that suits your needs.<br /><br />
+              Explosions and conflagrations, hearth fires and candlelight, all forms of fire attend your call.<br /><br />
+            </div>
+          </div>    
+          <div class="option" id="perk:water">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Water Control</h4>
+            <div class="option-description">
+              <div class="flavor">"The dragon rose, and the sea followed it." <br />–Village Storyteller </div><br />
+              With the birth of water an unbreakable bulwark pushed down chaos, and thus change became possible.<br /><br />
+              Water cares not for how it manifests; in motion it is as a spear, in calm it is as a shield.<br /><br />
+              Be they currents that rip apart ships, endless deluges, or gentle waves, all waters are part of you.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="perk:earth">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Earth Control</h4>
+            <div class="option-description">
+              <div class="flavor">"Go, my little puppets, let not a single drop of rain touch me." <br />–Eulli, Earth Mage </div><br />
+              At earth’s birth, the foundations of life were build atop water, and so were the walls that chaos could not cross.<br /><br />
+              Earth resists change, but to be of any use it must move.<br /><br />
+              Spires of metal pierce your enemies, walls of stone shelter from harm, all at the instant you wish it so.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="perk:wind">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Wind Control</h4>
+            <div class="option-description">
+              <div class="flavor">"At first, we thought it was just a storm. We didn’t know what had awakened." – Ruined King</div><br />
+              Upon earth’s foundations, air breathed and life flourished.<br /><br />
+              Air manifests in motion, but sometimes it becomes a deathly calm where life is slowly drained away.<br /><br />
+              Great tornadoes, skin-tearing gales, gentle breezes, all are at your command.<br /><br />
+            </div>
+          </div>    
+          <div class="option" id="perk:ice">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Ice Control</h4>
+            <div class="option-description">
+              <div class="flavor">"The cold beckons..." –Wendigo</div><br />
+              Sometimes, water takes on the properties of earth, giving rise to ice.<br /><br />
+              Monsters that control ice are rare, but far to the north, where they are most common, there are few beings more feared.<br /><br />
+              For ice, stout as the earth, moves with the fluidity of water and the cold it leaves in its wake renders the land barren.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="perk:lightning">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Lightning Control</h4>
+            <div class="option-description">
+              <div class="flavor">"Sheep of Enlil, I Suparna, shall remind you to whom lightning belongs." <br />–Suparna of the third brood</div><br />
+              When wind’s motion becomes fury, and thus becomes as fire, only then is lightning born.<br /><br />
+              Lightning is the favored weapon of the gods, and often do endless bolts rain upon monsters that dare assault the temple-cities.<br /><br />
+              Lightning moves faster than the winds, and strikes with more ferocity than fire.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="perk:spell tongue">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Spell Tongue</h4>
+            <div class="option-description">
+              <div class="flavor">"Come, beasts! Let me show you mankind’s might!" <br />–Ashu, hammer of Enki</div><br />
+              Magic has been man’s defense against his enemies since he sided with the gods.<br /><br />
+              While the monsters attuned to the elements control the as one might a body part, mages are much more versatile, 
+              their spells bring all elements to heel, though it might require catalysts or lengthy chants.<br />
+              In their pride, they haven’t realized nothing stops monsters from learning magic.<br /><br />
+            </div>
+          </div>
+        </div>
+        
+        <h3>Soul</h3>
+        <div class="options top-images row4">
+          <div class="option" id="perk:radiance">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Radiance</h4>
+            <div class="option-description">
+              <div class="flavor">"We know no gods, but the stag-king." <br />– Northern Barbarian </div><br />
+              Much has been written of Enlil’s radiance, of how he blinded the monsters that threated to devour humanity, and lead his followers to safety and prosperity.<br /><br />
+              What is not engraved in tablets is how some monsters are born with the same humbling radiance, their bodies warm to the touch and their voices commanding.<br /><br />
+              Often these shining beings cannot bear other’s pain, and do all in their power to stop their suffering<br /><br />
+            </div>
+          </div>    
+          <div class="option" id="perk:aureola">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Aureola</h4>
+            <div class="option-description">
+              <div class="flavor">"I’m sorry, mother, but I cannot bear to see them live." <br />–Mnevis of the third brood</div><br />
+              Your aura has grown in strength so much that it has begun to tread into the material realm.<br /><br />
+              It can turn away enemy blows, and render the elements deaf to spells, and if you wish, rain upon enemies as searing bolts of light.<br /><br />
+              So strong is your existence that you could weather the old chaos, your light keeping you safe from the uncaring tides of non-existence.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="perk:soul bond">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Soul Bond</h4>
+            <div class="option-description">
+              <div class="flavor">"The old drake had made a decision. It would give what little it had left. For her." <br />–Long lost tale</div><br />
+              In long lost days, monsters could form a pact, bonding their souls with the other and sharing their boundless strength.<br /><br />
+              That art is now long lost, for in the age of the gods, companionship is but a weakness.<br /><br />
+              You have recovered the pact, but will you be able to find someone worthy of it in this world?<br /><br />
+            </div>
+          </div>
+          <div class="option" id="perk:pneumaphagy">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Pneumaphagy</h4>
+            <div class="option-description">
+              <div class="flavor">"Flowers burrow below the sea, the ur-child of the unborn; plant them in your eyes and truly see." <br />–Adform of Naso </div><br />
+              It seems your soul is truly from another place, and what remains of the days before the days harkens to you, in envy, love, and hatred.<br /><br />
+              Giving voice to soundless whispers, black streams of ooze fly around you and what they kill ceases existing, their souls unmade. And in this consumption your strength slowly grows.<br /><br />
+            </div>
+          </div>    
+        </div>
+        
+        <h3>Body</h3>
+        <div class="options top-images row4">
+          <div class="option" id="perk:toxicity">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Toxicity</h4>
+            <div class="option-description">
+              <div class="flavor">"Come to laugh at my form, human? Very well, you shall drown in my poison." <br />–Cup Bearer of the All-Mother</div><br />
+              Your body now excretes poison, a full does of which is lethal to any being below your power.<br /><br />
+              If you have a Stinger Tail, the venom it delivers has become so incredibly lethal that it can kill even beings with less than two more power than you.<br /><br />
+              If you have Water Control, your poison counts as water for the purposes of that perk.<br /><br />
+            </div>
+          </div>    
+          <div class="option" id="perk:mimicry">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Mimicry</h4>
+            <div class="option-description">
+              <div class="flavor">"I sit. I wait. I eat." <br />–Mimic</div>
+              Some monsters prefer to simply wait for their prey to come, instead of hunting for them.<br /><br />
+              If you wish to join their ranks, this perk is essential, for it allows you to imitate the color and texture of everything you touch.<br /><br />
+              If you have Earth Control, this imitation becomes much more genuine, as you can change the composition of your skin to any sort of inorganic material you have touched.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="perk:overdrive">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Overdrive</h4>
+            <div class="option-description">
+              <div class="flavor">"Heh, he is well beyond human limits now. Shame that he won’t live long." <br />–Imi, Magical Researcher</div><br />
+              Many have tried to force themselves beyond their limits using magic, and few have found success.<br /><br />
+              You however, can claim more success than most, and for an amount of minutes equal to your power, you can boost all of your ability scores by +1.<br /><br />
+              If you exceed that limit without having significant rest, your body will be damaged. Possibly enough to force you into a coma.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="perk:regeneration">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Regeneration</h4>
+            <div class="option-description">
+              <div class="flavor">"Cut off their heads, it is the only way to put them down." <br />–Swamp Hunter </div><br />
+              It is rare, but some species of monsters possess a boundless vitality which, independently from their strength, closes their wounds at blistering speeds.<br /><br />
+              Wounds disappear in seconds, and severed limbs take only minutes to regrow.<br /><br />
+              If you have Overdrive, this perk doubles the amount of time you can use it without incurring nigh lethal damage.<br /><br />
+            </div>
+          </div>    
+          <div class="option" id="perk:shapeshifting">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Shapeshifting</h4>
+            <div class="option-description">
+              <div class="flavor">"What are you hiding under that hat" <br />–Townsfolk </div><br />
+              Your abilities of mimicry extend even to living creatures. 
+              You can change your appearance to be similar to any species you have seen that is within the same size category of your normal size.  <br /><br />
+            </div>
+          </div>
+          <div class="option" id="perk:drones">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Drones</h4>
+            <div class="option-description">
+              <div class="flavor">"My god! There’s more of them" <br />–Adventurer before being eaten </div><br />
+              You have the capability to spawn smaller, lesser versions of yourself without a mate.<br /><br />
+              These children of yours are sentient (but not sapient) and loyal to only you. 
+              However they will only grow to have ability scores 2 less than yours and are incapable of reproducing on their own.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="perk:swiftness">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Swift Movements</h4>
+            <div class="option-description">
+              <div class="flavor">"Location, location, location...where you are standing in a fight can be the difference between a scratch or a belly full of metal." <br />–Sword master </div><br />
+              Knowing where to step when you dodge attacks and where to use your opponent’s strength against them comes naturally to you. <br /><br />
+              You have preternaturally good reflexes and sometimes even start dodging before your enemies start to make their attacks.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="perk:strikes">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Powerful Strikes</h4>
+            <div class="option-description">
+              Sometimes it takes practice to find the right applications of your strength in combat.<br /><br />
+              Your blows affect others much more than one would expect given your strength.<br /><br />
+            </div>
+          </div>
+          
+        </div>
+        
+      </section>
+      
+      <section id="Shastra Astras">
+        <h2>Shastra Astras</h2>
+        <div class="section-description">
+          Special techniques and powers to surpass your enemies. Choose up to 3 total.
+        </div>
+        <div class="options top-images row5">
+
+          <!-- Row#1, Box #1 -->
+          <div class="option" id="shastra:power">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>All Sunderer</h4>
+            <div class="option-description">
+              <div class="flavor">"Yep, it's dead. Good job, Ir. Shame 'bout the land, but Lork Enki will fix it, so no biggy."<br />-Kalla, Shadow of Ir</div><br />
+              The realization of your incredible power strikes you. 
+              Power enough to make the worldbones forget themselves in amazement and let you strike, unburdened by distance, piercing any defense.<br /><br />
+              It is incredibly exhausting to bend the laws of the world by sheer strength alone, and can only be done once per day.<br /><br />
+            </div>
+          </div>
+          
+          <div class="option" id="shastra:speed">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Thousand Cuts</h4>
+            <div class="option-description">
+              <div class="flavor">"Strength and Speed, flawless and firm. A thousand petals fall."<br />-Mantra of a mantis</div><br />
+              What makes a warrior truly superior to another?<br /><br />
+              Moving at speeds that make the world slow into a crawl and with flawless technique, you have stumbled onto a shard of an answer.<br /><br />
+              Thoughts and body flowing like a river, always reaching the sea.
+              One perfect strike begets a thousand more. And you enemies are scattered to the wind.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="shastra:finalform">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Final Form</h4>
+            <div class="option-description">
+              <div class="flavor">"It grew!" –Knight </div><br />
+              Sometimes you just need to let go and release your monstrous side. <br /><br />
+              Embracing your monstrous roots you grow in power and double in size. All your stats increase by 3 for the duration.<br /><br />
+              This ability may only be used once you have less than a quarter of your vitality left.<br /><br />
+              Using this diminishes you and afterward all your scores decrease by 2 for a week.<br /><br />
+              Note: This does not allow you to exceed the normal max of 11<br /><br />
+            </div>
+          </div>
+          <div class="option" id="shastra:swarm">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Swarm Call</h4>
+            <div class="option-description">
+              <div class="flavor">"There were so many. They covered the land like a dark tide." <br />–Survivor of attack by seventh brood </div><br />
+              Why have one drone when five drones would be better? Having numerical superiority is a major tenet of your lifestyle and strategies.<br /><br />
+              Using a combination of magic and blood ties to your brood of drones, the number of drones present are multiplied in number.<br /><br />
+              These new drones are fully mature, but lack sapience.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="shastra:inseparable">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Inseparable</h4>
+            <div class="option-description">
+              <div class="flavor">"Never shall we part." <br />–Last dragonrider </div><br />
+              Companionship unbreakable by distance, obstacles, or even death.<br /><br />
+              The connection you share with your companion is so great that you always know the direction towards your companion, and either of you can will themselves to appear near the other.<br /><br />
+              Once per day, if one of you would die the other can sacrifice half of their vitality to prevent it from happening.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="shastra:toxikos">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Toxikos</h4>
+            <div class="option-description">
+              <div class="flavor">"I’m melting!” <br />–Margaret, Witch</div><br />
+              Some poisons are so toxic they can eat away at anything they touch.<br /><br />
+              Your poisons are now incredibly potent, and once per day they can affect creatures with two more strength than they normally would, bypassing any normal immunity to poison. <br /><br />
+              This is incredibly dangerous and requires the majority of the poisons in your body to perform. <br /><br />
+            </div>
+          </div>
+          <div class="option" id="shastra:nike">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Nike</h4>
+            <div class="option-description">
+              <div class="flavor">"Victory at any cost." <br />–Outlander </div><br />
+              Sometimes a fight has to be won and no price is too steep, no sacrifice too high to do so.<br /><br />
+              This is for those occasions. Burn your memories, your will, and your very soul in a great flood of power.<br /><br />
+              All your stats increase by 3, breaking even the limit of 11. <br /><br />
+              After it finishes though, it will be a miracle if your soul survives, let alone your body.<br /><br />
+            </div>
+          </div>
+          
+          <div class="option" id="shastra:gloriole">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Gloriole</h4>
+            <div class="option-description">
+              <div class="flavor">"Light beyond light, glory of glories" <br />–Revelation of the blind man </div><br />
+              The light of your soul, once ephemeral, surrounds you as a great sphere, becoming physical at your command. 
+              Any enemy that would dare assault this moving kingdom is crushed, seared, made into dust and thrown away.<br /><br />
+              Once per day, where before your radiance had to prove itself to the world, now it is the world who must stand up to your soul, or be unmade.<br /><br />
+            </div>
+          </div>
+          
+          <div class="option" id="shastra:trumpeter">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Trumpeter</h4>
+            <div class="option-description">
+              <div class="flavor">"Onwards! To Victory!" <br />–Warlord </div><br />
+              There are those born with the power to inspire others, and sometimes that power takes a more tangible form.<br /><br />
+              With a spirited cry, you inspire your allies to break their limits, raising their ability scores by up to two. (Maximum of your score)<br /><br />
+              Your soul shields them from the damage they would incur, and needs a full day of rest before it can do so again.<br /><br />
+              If gained for free, doesn’t count towards maximum slots.<br /><br />
+            </div>
+          </div>
+          
+          <div class="option" id="shastra:spellsoul">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Spellsoul</h4>
+            <div class="option-description">
+              <div class="flavor">"You might not hear it, but the world speaks." <br />-Shurul, Heretic mage </div><br />
+              In studying human magic, you have made a discovery: mindless as they are, devoid of will as they are, the worldbones speak. And you understand them.<br /><br />
+              Speaking back to the second brood, your spells no longer require incantations nor catalysts, and their power matches the might of any elemental.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="shastra:fire">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Sunflare</h4>
+            <div class="option-description">
+              <div class="flavor">"That light is burned into my eyes. That was a god, no matter its shape." <br />–Old Soldier</div><br />
+              An arrow of light strikes the ground, and leaves nothing in its wake. The land left barren from horizon to horizon.<br /><br />
+              This is fire supernal, left free of all bindings, and it belongs to you and you to it.<br /><br />
+              You flames now burn hotter than the sun, and once per day, even that heat seems middling before your mightiest conflagration.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="shastra:water">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Rising Sea</h4>
+            <div class="option-description">
+              <div class="flavor">"The sea has a master, and he is cross today, looks like." <br />–Pirate Captain </div><br />
+              The ocean bends into strange shapes, before leaping and destroying all that stands.<br /><br />
+              When water is left unburdened, it raises to become ruler of all that is, and you rise with it.<br /><br />
+              Tides that dye the sea and land red, currents that swallow armies entire, they are yours. And once per day, all water under the sky is yours to command.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="shastra:earth">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Land Walker</h4>
+            <div class="option-description">
+              <div class="flavor">"The land has carried you far too long, give in to its fury." </div><br />
+              The mountains burst into great boulders, before being made anew. The screams of the towns trapped below cannot be heard.<br /><br />
+              Earth, when it has bared too much, casts it oaths down and buries all that stand in your way.<br /><br />
+              Shifting mountains away from your path, crushing enemies like flies, and once per day, mold the landscape as you see fit.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="shastra:wind">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Sirocco Howl</h4>
+            <div class="option-description">
+              <div class="flavor">"The wind howled, until there was nothing left." <br />–Survivor of a lost hamlet </div><br />
+              The wind roars, and all that exists upon the soil is yanked out, tasting the freedom of flight for the first and last time.<br /><br />
+              Air bereft of chains acts as it wishes, and so do you.<br /><br />
+              Deny breathing to your enemies, have them keel over under the howl of southern winds, and once per day, all winds wherever they be, will hearken to your call.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="shastra:ice">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Age of Ice</h4>
+            <div class="option-description">
+              <div class="flavor">"That spire? It’s been there before grandpa’s grandpa’s times." <br />–Northern Village </div><br />
+              In an instant all goes silent and stops moving, nothing survives the cold claws of ice.<br /><br />
+              Ice is itself almost unnatural, and when left to rein supreme, all life but you is extinguished in its possessive grasp.<br /><br />
+              Glaciers are born at your fingertips and once per day, entire lands can be covered in ice.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="shastra:lightning">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Judgement Bolt</h4>
+            <div class="option-description">
+              <div class="flavor">"Very well, your death shall echo in eternity, brother.” <br />–Enlil, King of the gods.</div><br />
+              In the distance, it can almost be mistaken for normal lightning, and then it strikes again, and again, unmaking the horizon in a deluge of light.<br /><br />
+              This is lightning becoming absolute, its might the crown of its owner.<br /><br />
+              The storm is no match for you, its ruler, and once per day, all bends and is pierced by an endless bolt.<br /><br />
+            </div>
+          </div>
+          <div class="option" id="shastra:theophagy">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Theophagy</h4>
+            <div class="option-description">
+              Well, now, this is not quite right, is it not? <br /><br />
+              You can feel it don’t you? That this cannot go on.<br /><br />
+              T̸̷hi̡s͡͡ ̕f̴i͢l҉҉̧t҉h͜y̧͜͟,̨̡͟ ̸ḑ̴irt̸ỳ̸,̨͞ u̧͜n͏ẃo̡͡r̴͟t̛ḩ̕y̷̸ ̵̧w̸̧͢o̶͘͢rld̵<br /><br />
+              Embrace us, friend. The gods, the bones, the mother, they shall be consumed and overcome.<br /><br />
+              Return all to how it should have always been.<br /><br />
+              G̨͈̖̭̰͙̼̳̗͘ͅi͠҉̥̟̺͕͖̱͉͈͎̯̭̝̗̣̠̼̳v̡̦͎̠̟̦̤͔̮͙̣̮͓͖͉̝̙ͅͅe͓͇͚̩̻͉̜̠̫͖̣̱͇͘͝͠ ̡҉̨̢͔͔̭̭̩̟͞ų̛̺͇͇̭͉̝͕̗̣̠͍̖̻̫̻̕͢͟s҉̡͖̼͖̜̥͖̻͢ ̶̛̩͈̻̲̫̩̙̀̕ͅp̴̰̹̦͇͇̼̖͓͓é̡̟̤̥͜͞ͅa͏̳̪̣͕͚̙̱̟̘̺̹̣͙̭͇͝c̡͕͈̞̥͙͉͕͙͟e̷̡͙̬̲͟͞͝.̺͖̦̠͎͘͢͟͡<br /><br />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="drawbacks">
+        <h2>Drawbacks</h2>
+        <div class="section-description">
+          Not everything is roses and sunshine.
+        </div>
+        <div class="options top-images row6">
+          <div class="option" id="drawback:hibernation">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Hibernation</h4>
+            <div class="option-description">
+              <div class="flavor">
+                "Luckily for us, it's been asleep for two decades and counting." <br />- Mountain Guide
+              </div> <br />
+              If you wish it so, you can make your soul support your body the bare minimum, in exchange for great strength. <br /><br />
+              This is irreversible, and the great exhaustion from even short burst of activity will force you to sleep.<br /><br />
+              Most of your long, long life will be spent sleeping.<br /><br />
+              <div class="bonus">
+                Grants +25 points
+              </div>
+            </div>
+          </div>
+          
+          <div class="option">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Ravenous Hunger</h4>
+            <div class="option-description">
+              <div class="flavor">
+                "IT'S NOT ENOUGH! It is never enough." <br />- Accursed Man
+              </div> <br />
+              Something has gone horribly wrong with your body. <br /><br />
+              No matter how much you eat, even if your stomach is ready to burst, the hunger remains. <br /><br />
+              The compulsion to eat is almost too strong to resist, and everything is starting to look so, so delicious...<br /><br />
+              <div class="bonus">
+                Grants +15 points
+              </div>
+            </div>
+          </div>
+          
+          <div class="option">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Maneater</h4>
+            <div class="option-description">
+              <div class="flavor">
+                "DIE! HUMAN DIE!" <br />- Flesh Eater
+              </div> <br />
+              During the war, only the most fanatic, most enraged of monsters swore this oath.<br /><br />
+              You too can partake in it, but since that moment, other flesh tastes like ash and no flesh but that of man will sate your hunger.<br /><br />
+              But only in eating the flesh of man, the strength of a monster increases.<br /><br />
+              If you intended to be at least neutral to mankind, then you shouldn't take this. <br /> <br />
+              <div class="bonus">
+                Grants +15 points
+              </div>
+            </div>
+          </div>
+          
+          <div class="option">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Bane</h4>
+            <div class="option-description">
+              <div class="flavor">
+                "Remember, these beasts are weak to silver" <br />- Monster Hunter
+              </div> <br />
+              Some monsters are born hated, not by men or their kin, but by a tiny party of the worldbones. <br /><br />
+              Choose something mundane, like the root of a specific plant, or a precious metal.<br /><br />
+              This acts as your bane, and pierces any defense you may have. However, it is not instantly lethal, and whoever is using it needs to be able to strike you anyway.<br /><br />
+              <div class="bonus">
+                Grants +15 points
+              </div>
+              **NOTE**: You may take this up to 3 times with different materials.
+            </div>
+          </div>
+          
+          <div class="option">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Broodling</h4>
+            <div class="option-description">
+              <div class="flavor">
+                "Don't be foold, it might be small, but it's still a monster" <br />- Steppe Wanderer
+              </div> <br />
+              While normally you would be born fully grown, you instead have  decided to be born as a baby, barely able to fend for yourself.<br /><br />
+              Over a period of six years, you will reach full maturity, your time as an infant letting you discover strength you didn't think you possessed.<br /><br />
+              <div class="bonus">
+                Grants +20 points
+              </div>
+            </div>
+          </div>
+          
+          <div class="option">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Notorious</h4>
+            <div class="option-description">
+              <div class="flavor">
+                "Give chase. To the ends of the earth, if need be." <br />- Priest of Enlil
+              </div> <br />
+              Your birth would normally be a quiet, discreet thing, hidden from watching eyes by the prison holding the All-Mother. <br /><br />
+              That is not the case anymore. The great energies forming you have annouced to the world, and the gods watching, just what has happened<br /><br />
+              Their pursuit can only end in two ways: either you are brough under their heel, or you kill the gods.<br /><br />
+              <div class="bonus">
+                Grants +20 points
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+  
+      <section id="conclusion">
+        <h2>Conclusion</h2>
+        <div class="section-description">
+          <div class="flavor">
+            "It is ... done."
+          </div>
+          Your eyes open, taking in light again. The woman with a soft, sad voice once again begs you to run to the distant mountain, as you did before.
+          Your new body makes the trek a breeze and before long, you are at the foot of the mountain.
+          But as you ascend it, your steps lead you far higher than the peak, the island you were in fading like a mirage.
+          You see a great lake with lights swirling beneath it, and thousands of holes in the sky.
+          <br /><br />
+          As you approach one of the holes and see the real sun's ligh for the first time, you descern a figure in the distance.
+        </div>
+        <div class="options top-images row6">
+
+          <div class="option" id="end:vanir">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Vanir</h4>
+            <div class="option-description">
+              <p>
+                The figure introduces himself as Enki, one of the gods of this world.                
+              </p>
+              <p>
+                Before you can react, he gets on his hands and knees and begs you to listen.
+              </p>
+              <p>
+                The god cannot bear to kill another of his kin, and begs you to join him, tears streaming down his chin.
+                He proceeds to list an interminable list of reasons why you should accept his offer, growing more desperate with each one.
+              </p>
+              <p>
+                After some consideration you accept.
+              </p>
+              <div class="restriction">
+               * <b>[Notorious]</b> Required <br />
+               * <b>[Theophagy]</b> Prohibited <br />
+               * <b>[Human]</b> Prohibited <br />
+              </div>
+            </div>
+          </div>
+          
+          <div class="option" id="end:freedom">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Freedom</h4>
+            <div class="option-description">
+              <p>
+                The figure was nothing but a bunch of sticks that looked similar to a person.
+              </p>
+              <p>
+                You look out to see sky-defying peakss and green plains. In the distance you can see a river.
+              </p>
+              <p>
+                Taking in the clean air, you being to walk. Gods and monsteres matter not to this moment. You owe noting to no one.
+              </p>
+              <p>
+                You are your only responsibility.
+              </p>
+              <p>
+                You are free.
+              </p>
+              <div class="restriction">
+               * <b>[Theophagy]</b> Prohibited <br />
+               * <b>[Notorious]</b> Prohibited <br />
+               * <b>[Human]</b> Prohibited <br />
+              </div>
+            </div>
+          </div>
+          
+          <div class="option" id="end:war">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Twilight of the Gods</h4>
+            <div class="option-description">
+              <p>
+                The figure's rancid smell hits you, as you see the corpse.
+              </p>
+              <p>
+                You raise your eyes and find another, and another, and another. So very many corpses. All brutalized beyond recognition.
+              </p>
+              <p>
+                Before long, you find a destroyed ... village? Nest? There's so much damage you cannot tell.
+              </p>
+              <p>
+                Is this what the gods do to those that defy them? Then they cannot be suffered to live.
+              </p>
+              <p>
+                Rise, children of the All-Mother, and cast down the traitorous gods.
+              </p>
+              <div class="restriction">
+               * <b>[Human]</b> Prohibited <br />
+              </div>
+            </div>
+          </div>
+          
+          <div class="option" id="end:ragnarok">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Ragnarok</h4>
+            <div class="option-description">
+              <p>
+                The figue is a skeleton with plants using it as scaffolding.
+              </p>
+              <p>
+                You understand. Death is required for new growth.
+              </p>
+              <p>
+                Everything dies, and it is long past time for the world itself to do so. Humans, monsters, gods. All shall die, so there can be peace once more.
+              </p>
+              <p>
+                You shall bring the end of the world, so it can be recast anew from primordial chaos.
+              </p>
+              <div class="restriction">
+               * <b>[Theophagy]</b> Required <br />
+               * <b>[Human]</b> Prohibited <br />
+              </div>
+            </div>
+          </div>
+          
+          <div class="option" id="end:hunted">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Hunted</h4>
+            <div class="option-description">
+              <p>
+                The figue introduces himself as Enki, one of the gods of this world.
+              </p>
+              <p>
+                Before you can react, he stabs towards you with a spear.
+              </p>
+              <p>
+                The god tells you that he cannot bear to let another of his brothers and sisters die to a monster such as yourself.
+              </p>
+              <p>
+                You desperately fight to survive against him, as you process his words. Do you kill him? Can you kill him? 
+              </p>
+              <p>
+                Know that his conviction is such that he will never cease his hunt until only one of you remain.
+              </p>
+              <div class="restriction">
+               * <b>[Notorious]</b> Required <br />
+               * <b>[Human]</b> Prohibited <br />
+              </div>
+            </div>
+          </div>
+          
+          <div class="option" id="end:stay">
+            <div class="boxes">
+              <img src="https://cdn.hyperdev.com/paste-me.svg?v=1477325869954" alt="Small Size" height="200"/>  
+              <button onclick=""> Select </button>
+            </div>
+            <h4>Imprisoned</h4>
+            <div class="option-description">
+              <p>
+                The figure is that of the All-Mother.
+              </p>
+              <p>
+                Despite the incredible distance you traveled, it seems you are right back where you started.
+              </p>
+              <p>
+                You realize that despite what feels like a lot of time passing you haven't felt hunger, or thirst.
+              </p>
+              <p>
+                Perhaps staying and keeping the All-Mother company is an acceptable price for immortality.
+              </p>
+              <p>
+                You are at peace.
+              </p>
+              <div class="restriction">
+               * <b>[Theophagy]</b> Prohibited <br />
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      
+    </main>
+
+    <footer>
+      Based on the <a href="https://imgur.com/a/1RGOr">Be The Monster CYOA</a> <br />
+      Made with <a href="https://glitch.com">Glitch</a>!
+    </footer>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+
+  </body>
+</html>
